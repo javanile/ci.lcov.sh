@@ -1,0 +1,15 @@
++ export LCOV_DEBUG=1
++ LCOV_DEBUG=1
++ export 'PS4=+:${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
++ PS4='+:${BASH_SOURCE}:${LINENO}:${FUNCNAME[0]}: '
+++:test/entrypoint.test.sh:6:main: bash entrypoint.sh
++:entrypoint.sh:8:main: '[' -z '' ']'
++:entrypoint.sh:9:main: echo 'error: not found GITHUB_TOKEN'
++:entrypoint.sh:10:main: exit 1
++:test/entrypoint.test.sh:6:main: actual_output='error: not found GITHUB_TOKEN'
++:test/entrypoint.test.sh:7:main: actual_exit_code=1
++:test/entrypoint.test.sh:8:main: expected_output='error: not found GITHUB_TOKEN'
++:test/entrypoint.test.sh:9:main: expected_exit_code=1
++:test/entrypoint.test.sh:11:main: [[ error: not found GITHUB_TOKEN != \e\r\r\o\r\:\ \n\o\t\ \f\o\u\n\d\ \G\I\T\H\U\B\_\T\O\K\E\N ]]
++:test/entrypoint.test.sh:16:main: echo Pass
+8487b73f-3ba4-4caa-ae3b-17346c0d5928
