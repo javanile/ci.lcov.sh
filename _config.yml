@@ -1,4 +1,3 @@
 name: ci.lcov.sh
-title: null
-theme: minima
-#remote_theme: javanile/butane-jekyll-theme
+#theme: minima
+remote_theme: kuntoaji/dekyll
